@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+                        /*INDEX*/                       
+
+
+.ContainerHead{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 0.3fr 0.5fr;
+    justify-items: stretch;
+    grid-template-areas: 
+    "Nav Nav"
+    "Titulo Titulo";
+}
+
+
+
+
+.encabezado{
+    grid-area: Nav;
+}
+
+.menu li{
+    display:inline-flex;
+    flex-direction: row;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: black;
+    margin: 20px 15px 30px 40px;
+    background-color: rgb(225, 226, 166);
+    
+    
+    
+}
+
+.Titulo{
+    display: grid;
+    grid-area: Titulo;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    font-size: 100px;
+    color:rgb(224, 224, 198);
+    border-top: groove black 5px;
+    border-bottom: groove black 5px;
+}
+
+    /*font-size:100px;
+    line-height:120px;
+    font-weight: 600px;
+    color: rgb(144, 12, 63);
+    background-color:rgb(218, 247, 166);
+    margin: 0%;
+    border:groove 10px rgb(255, 87, 51);
+}*/
+
+.ContainerMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:3fr 1fr;
+    grid-template-areas: 
+    "Photo Subt"
+    "Photo Parra"
+    "Video .";
+}
+
+.Primerparrafo h2{
+    grid-area: Subt;
+    margin: 20px 80px;
+    display:flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    line-height: 30px;
+    font-weight:100px;
+    width: 100%;
+    color: rgb(243, 243, 243);
+    justify-content:flex-start;
+    
+}
+
+
+.Primerparrafo p{
+    grid-area: Parra;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(231, 238, 192);
+    margin-top: 30px;
+
+}
+
+
+
+
+.Imagen1{
+    grid-area: Photo;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin-bottom: 30px;
+
+
+
+}
+
+.VideoI{
+    grid-area: Video;
+    display: flex;
+    margin-bottom: 100px;
+    width: 60%;
+    height: 60%;
+}
+
+
+
+.ContainerPie{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "Pie Piee" ;
+
+}
+.ContainerPie h3{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: aliceblue;
+    
+}
+                        
+ 
+.Bodyindex{
+    background-image:url(../Multimedia/FondoSS2.jpg);
+}
+
+
+
+                                                   /*GALERIA*/
+
+
+.BodyGaleria{
+    background-image: url(../Multimedia/BackgroundG.jpg);
+}
+
+.ContainerHeadG{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 0.3fr 0.5fr;
+    justify-items: stretch;
+    grid-template-areas: 
+    "NavG NavG"
+    "TituloG TituloG";
+}
+
+.encabezadoG li{
+    grid-area: NavG;
+    display:inline-block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 20px 15px 30px 60px;
+
+    
+}
+
+.TituloG{
+    display: grid;
+    grid-area: TituloG;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    color:rgb(49, 49, 47);
+    text-align: center;
+    justify-content: flex-end;
+    border-top:groove black 5px;
+    border-bottom: groove black 5px;
+}
+
+
+.ContainerMainG{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:0.3fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "SubtG SubtG"
+    "GatoF GatoFT"
+    "GatoCT GatoC"
+    "GatoP  GatoPT" ;
+
+}
+
+.SubG{
+    grid-area: SubtG;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:40px;
+    text-align:center;
+    margin:0px;
+    color:rgb(22, 22, 20);
+}
+
+
+/*.GatoFT{
+    grid-area: GatoFT;
+    font-size: 60px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top:0px;
+    margin-bottom: 50px;
+    padding: 10px 50px;
+    
+}*/
+
+.GatoFP{
+    grid-area: GatoFT;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+
+}
+
+.GatoFI{
+    grid-area: GatoF;
+    justify-content: center;
+
+}
+
+
+/*.GatoCT{
+    grid-area: GatoCT;
+    font-size: 60px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top:0px;
+    margin-bottom: 50px;
+    padding: 10px 50px;
+    background-color: rgb(214, 159, 154);  
+    
+}*/
+.GatoCP{
+    grid-area: GatoCT;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.GatoCI{
+    grid-area: GatoC;
+    margin-left: 50px;
+}
+
+/*.GatoPT{
+    grid-area: GatoPT;
+    font-size: 60px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top:0px;
+    margin-bottom: 50px;
+    padding: 10px 50px;
+    background-color: rgb(214, 159, 154);  
+    
+}*/
+
+.GatoPP{
+    grid-area: GatoPT;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-top:80px;
+    display: flex;
+    justify-content: center;
+}
+
+.GatoPI{
+    grid-area: GatoP;
+}
+
+.ContainerPieG{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: 
+    "Telefono Derechos";
+}
+.ContainerPieG, h3{
+    grid-area: Telefono;
+
+}
+
+.ContainerPieG h2{
+    grid-area: Derechos;
+    color: black;
+    font-size:20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+                             /*CONTACTO*/
+
+.MenuC li{
+    display:inline;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 20px 15px 30px 60px;
+
+}
+
+
+.TitularC{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size:100px;
+    line-height:120px;
+    font: weight 600px;
+    color: rgb(144, 12, 63);
+    background-color:rgb(218, 247, 166);
+    background-size:500px;
+    margin: 0%;
+    border:groove 10px rgb(255, 87, 51);
+
+}
+
+.Dias h2{
+    position: relative;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-bottom: 50px;
+    background-image:url(../Multimedia/dias.jpg);
+    background-size: 200px;
+    color: rgb(253, 137, 59);
+
+}
+
+.Tabla{
+    display: inline-block;
+    margin: auto;
+    font-size: 25px;
+    border: 2px solid black;
+    border-collapse:collapse;
+}
+
+.Tabla, th{
+    border:1px solid black
+}
+
+.Tabla, td{
+    padding: 15px;
+    border:1px solid black
+}
+
+.Dias{
+    background-color: rgb(153, 63, 63);
+}
+
+.Encontranos{
+    background-color:rgb(161, 20, 75);
+}
+
+.Encontranos h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+   
+}
+
+.Turnos{
+    background-color:rgb(197, 66, 37) ;
+}
+
+.Turnos h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.Turnos h3{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+                                                           /*SHOP*/
+
+
+.MenuS li{
+    display:inline;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 20px 15px 30px 60px;
+
+}
+
+
+.TituloS h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size:100px;
+    line-height:120px;
+    font-weight: 600px;
+    color: rgb(144, 12, 63);
+    background-color:rgb(218, 247, 166);
+    background-size:500px;
+    border:groove 10px rgb(255, 87, 51);
+   
+
+}
+
+.Categorias{
+    background-color: black;
+}
+
+
+.Categorias li{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: aliceblue;
+
+}
+
+.ImgS{
+    background-color: black;
+}
+
+
+.ImgS1{
+    float: right;
+    width:300px;
+
+}
+
+.PieS{
+    background-color: black;
+}
+
+.PieS h3,h2{
+    color: aliceblue;
+}
+
+.PieS h3{
+    font-size: 30px;
+}
+
+.PieS h2{
+    font-size: 20px;
+}
+
+
+                                                     /*Sobrenosotros*/
+.MenuSS li{
+    display:inline;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 20px 15px 30px 60px;
+
+}
+
+.TituloSS {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size:100px;
+    line-height:120px;
+    font: weight 600px;
+    color: rgb(144, 12, 63);
+    background-color:rgb(218, 247, 166);
+    background-size:500px;
+    margin: 0%;
+    border:groove 10px rgb(255, 87, 51);
+}
+
+.ParrafosS h3{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-bottom:10px;
+    color:rgb(255, 87, 51) ;
+
+}
+
+.ParrafosS h4{
+    margin-top: 30px;
+    margin-left: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.ParrafosS p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:40px ;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.PieSS{
+    margin-top: 400px;
+}
+
+.PieSS H3{
+    color: bisque;
+}
+.BodySS{
+    background-image: url(../Multimedia/FondoSS2.jpg);
+    background-position: 30px;
+}
